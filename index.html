@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Jost:wght@400;500&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"美腸活サロン Leaile（レアイル）","address":{"@type":"PostalAddress","addressRegion":"石川県","addressLocality":"白山市","addressCountry":"JP"},"sameAs":["https://www.instagram.com/leaile_choukatsu/"],"priceRange":"¥13,000〜"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"美腸活サロン Leaile（レアイル）","address":{"@type":"PostalAddress","addressRegion":"石川県","addressLocality":"白山市","addressCountry":"JP"},"sameAs":["https://www.instagram.com/leaile_choukatsu/"],"priceRange":"¥2,500〜"}</script>
 <style>
 body{margin:0}
 
@@ -690,8 +690,28 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
   .band img{animation:pan 30s ease-in-out infinite alternate}
   @keyframes pan{from{object-position:40% 40%;transform:scale(1.06)}to{object-position:60% 50%;transform:scale(1.06)}}
 }
+/* ---------- メニュー（2026-11 改定） ---------- */
+.menu-cat{margin-top:40px;display:flex;align-items:center;gap:12px;font-family:var(--maru);font-weight:700;font-size:16px;color:var(--ink);letter-spacing:.16em}
+.menu-cat::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--orange)}
+.menu-cat::after{content:"";flex:1;height:1px;background:var(--line)}
+.menu-grid.two{margin-top:18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.menu-grid.two .first h3 small{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);letter-spacing:.08em;margin-top:4px}
+.first.alt{background:radial-gradient(70% 55% at 100% 0%,rgba(93,178,191,.18),transparent 70%),#FFFDF9}
+.first.alt .tag{background:var(--teal)}
+.rows-2{margin-top:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.row.soon{opacity:.75}
+.row .soon-b{font-family:var(--maru);font-size:14px;color:var(--muted);border:1px dashed var(--peach);border-radius:999px;padding:2px 12px}
+.tickets-grid{margin-top:18px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.tickets-grid .tickets{margin-top:0}
+.tickets-grid table{min-width:0}
+.tickets-grid th{text-align:center}
+.tickets-grid td{padding:12px 14px;font-size:13px}
+.tickets-grid td:last-child{color:var(--muted);font-size:12px;text-align:right}
+@media(max-width:900px){.tickets-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:820px){.menu-grid.two,.rows-2{grid-template-columns:minmax(0,1fr)}}
+.tickets-grid td{white-space:nowrap;padding:12px 10px}
+.tickets-grid td b{font-size:16px}
 </style>
-
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -712,8 +732,8 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     <a href="#access"><i>アクセス</i>ご予約・場所</a>
   </nav>
   <div class="pills">
-    <a class="pill pill--teal" href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>ご予約<em>→</em></a>
-    <a class="pill pill--orange" href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H9l-5 4z"/></svg>LINEで相談<em>→</em></a>
+    <a class="pill pill--teal" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>ご予約<em>→</em></a>
+    <a class="pill pill--orange" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H9l-5 4z"/></svg>LINEで相談<em>→</em></a>
     <a class="pill pill--apricot" href="https://www.instagram.com/leaile_choukatsu/" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram<em>→</em></a>
   </div>
 </aside>
@@ -729,24 +749,17 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
   <section class="kv" aria-label="美腸活サロン Leaile">
     <img class="kv-bird" src="img/deco/birds.webp" alt="" aria-hidden="true">
     <img class="kv-bg" src="img/hero_bg.jpg" alt="白山と手取川を望む丘に立つサロンと、セラピストとお客さまのイラスト">
-    <div class="kv-cta"><a href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener">LINEで予約 ↗</a></div>
+    <div class="kv-cta"><a href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで予約 ↗</a></div>
     <h1 class="kv-copy">
       <span class="ln">おなかから、</span>
       <span class="ln">こころも体も</span>
       <span class="ln"><em>えがお</em>に。</span>
       <span class="sub">腸と脳から整える、白山市の美腸活サロン</span>
     </h1>
-    <a class="kv-card" href="#news"><span class="tg">2周年キャンペーン</span><b>はじめての方 腸もみ60分</b><span>¥15,600 → ¥13,000（10/31まで）</span></a>
+    <a class="kv-card" href="#menu"><span class="tg">新メニュー</span><b>relax HOT腸セラピー 40分</b><span>6,850円。はじめての方も気軽に</span></a>
   </section>
 
   <!-- お知らせ -->
-  <section class="news" id="news" aria-label="お知らせ">
-    <img class="deco " src="img/deco/flower.webp" alt="" aria-hidden="true" loading="lazy" style="right:-14px;top:-30px;width:110px;transform:rotate(20deg)">
-    <p class="day">2026<b>9.1</b>〜10.31</p>
-    <div><h3>おかげさまで2周年。ご新規さま限定キャンペーン</h3><p>腸もみ60分コースを、期間限定の特別価格でご案内しています。リピーターさまには美脚くびれメイク10分の無料サービスも。</p></div>
-    <p class="off"><s>¥15,600</s>¥13,000<br><small>腸もみ60分（ご新規さま）</small></p>
-  </section>
-
   <!-- メッセージ -->
   <section class="panel msg" id="message">
     <img class="deco tl " src="img/deco/flower.webp" alt="" aria-hidden="true" loading="lazy" style="left:-58px;top:-18px;width:170px;transform:rotate(-24deg)">
@@ -919,35 +932,53 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     <div class="in">
       <p class="lb">メニュー</p>
       <h2 class="h2">メニューと料金</h2>
-      <div class="menu-grid">
+      <p class="menu-cat">腸もみ</p>
+      <div class="menu-grid two">
         <div class="first">
-          <span class="tag">いちばん人気</span>
-          <h3>HOT腸もみ 60分</h3>
-          <p class="price">15,600<small>円（税込）</small></p>
-          <p>おなかをあたためながら、YOLO式の腸もみをおこないます。骨盤まわりのケアもいっしょに。はじめにカウンセリングでお悩みを伺います。</p>
-          <a class="btn" href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener">LINEで予約する</a>
+          <span class="tag">じっくり整えたい方に</span>
+          <h3>YOLO式腸もみ<small>骨盤調整＋HOT腸もみ 60分</small></h3>
+          <p class="price">15,600<small>円</small></p>
+          <p>おなかをあたためながら、YOLO式の腸もみをおこないます。骨盤まわりの調整もいっしょに。はじめにカウンセリングでお悩みを伺います。</p>
+          <a class="btn" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで予約する</a>
         </div>
-        <div>
-          <p class="lb" style="margin-bottom:12px">腸もみとセットで</p>
-          <div class="rows">
-            <div class="row"><img class="rico" src="img/deco/leaf.webp" alt="" aria-hidden="true" loading="lazy"><h4>全身揉みほぐし 30分</h4><b>3,500円</b><p>腸もみのあとに、全身の緊張をほぐします。</p></div>
-            <div class="row"><img class="rico" src="img/deco/sun.webp" alt="" aria-hidden="true" loading="lazy"><h4>脳もみ nomomi® 20分</h4><b>3,000円</b><p>頭まわりをやさしくほぐす、脳もみセラピストの施術です。</p></div>
-            <div class="row"><img class="rico" src="img/deco/yomogi.webp" alt="" aria-hidden="true" loading="lazy"><h4>水素水よもぎ蒸し 40分</h4><b>5,700円</b><p>専用の椅子に座って、下半身からじんわりあたためます。</p></div>
-          </div>
-          <p class="src">セットメニューは腸もみとあわせてのご利用価格です（単発のご利用はご相談ください）。</p>
+        <div class="first alt">
+          <span class="tag">気軽に試したい方に</span>
+          <h3>relax HOT腸セラピー<small>40分</small></h3>
+          <p class="price">6,850<small>円</small></p>
+          <p>おなかをあたためながら、やさしくほぐすリラックスコースです。はじめての方や、短い時間で整えたい方に。</p>
+          <a class="btn btn--teal" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで予約する</a>
         </div>
       </div>
-      <div class="tickets">
-        <table>
-          <thead><tr><th>回数券（HOT腸もみ 60分）</th><th>料金</th><th>1回あたり</th></tr></thead>
+      <p class="menu-cat">そのほかのメニュー</p>
+      <div class="rows rows-2">
+        <div class="row"><img class="rico" src="img/deco/yomogi.webp" alt="" aria-hidden="true" loading="lazy"><h4>水素水よもぎ蒸し 40分</h4><b>5,700円</b><p>専用の椅子に座って、下半身からじんわりあたためます。</p></div>
+        <div class="row"><img class="rico" src="img/deco/sun.webp" alt="" aria-hidden="true" loading="lazy"><h4>脳もみ 20分</h4><b>2,500円</b><p>頭まわりをやさしくほぐす、脳もみ nomomi® セラピストの施術です。</p></div>
+        <div class="row"><img class="rico" src="img/deco/leaf.webp" alt="" aria-hidden="true" loading="lazy"><h4>全身揉みほぐし整体 30分</h4><b>3,500円</b><p>全身の緊張をほぐします。腸もみと組み合わせても。</p></div>
+        <div class="row soon"><img class="rico" src="img/deco/flower.webp" alt="" aria-hidden="true" loading="lazy"><h4>YOLO式巻き肩調整 30分</h4><b class="soon-b">準備中</b><p>ただいま準備中です。はじまりましたらお知らせします。</p></div>
+      </div>
+      <p class="menu-cat">回数券</p>
+      <div class="tickets-grid">
+        <div class="tickets"><table>
+          <thead><tr><th colspan="3">YOLO式腸もみ 60分</th></tr></thead>
           <tbody>
-            <tr><td>3回券</td><td><b>45,300</b>円</td><td>15,100円</td></tr>
-            <tr><td>5回券</td><td><b>73,000</b>円</td><td>14,600円</td></tr>
-            <tr><td>10回券</td><td><b>140,000</b>円</td><td>14,000円</td></tr>
-          </tbody>
-        </table>
+            <tr><td>3回券</td><td><b>45,300</b>円</td><td>15,100円/回</td></tr>
+            <tr><td>5回券</td><td><b>73,000</b>円</td><td>14,600円/回</td></tr>
+            <tr><td>10回券</td><td><b>140,000</b>円</td><td>14,000円/回</td></tr>
+          </tbody></table></div>
+        <div class="tickets"><table>
+          <thead><tr><th colspan="3">relax HOT腸セラピー 40分</th></tr></thead>
+          <tbody>
+            <tr><td>3回券</td><td><b>20,100</b>円</td><td>6,700円/回</td></tr>
+            <tr><td>5回券</td><td><b>32,750</b>円</td><td>6,550円/回</td></tr>
+            <tr><td>10回券</td><td><b>63,500</b>円</td><td>6,350円/回</td></tr>
+          </tbody></table></div>
+        <div class="tickets"><table>
+          <thead><tr><th colspan="3">水素水よもぎ蒸し 40分</th></tr></thead>
+          <tbody>
+            <tr><td>4回券</td><td><b>18,000</b>円</td><td>4,500円/回</td></tr>
+            <tr><td>8回券</td><td><b>25,200</b>円</td><td>4,200円/回</td></tr>
+          </tbody></table></div>
       </div>
-      <p class="src">料金はInstagramの掲載内容をもとにしています。<span class="need">〔要確認：最新の料金・税込表記〕</span></p>
     </div>
   </section>
 
@@ -1046,7 +1077,7 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
             <dt>ご予約</dt><dd>LINEから受け付けています</dd>
           </dl>
           <div class="acts">
-            <a class="btn btn--teal" href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener">LINEで予約する</a>
+            <a class="btn btn--teal" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで予約する</a>
             <a class="ig" href="https://www.instagram.com/leaile_choukatsu/" target="_blank" rel="noopener">Instagram @leaile_choukatsu</a>
           </div>
         </div>
@@ -1063,13 +1094,13 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     <div class="in">
       <h2 class="h2">おなかから、えがおに。</h2>
       <p>はじめての方は、LINEからお気軽にご相談ください。</p>
-      <div class="acts"><a class="btn" href="#menu">メニューをみる</a><a class="btn btn--teal" href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener">LINEで相談する</a></div>
+      <div class="acts"><a class="btn" href="#menu">メニューをみる</a><a class="btn btn--teal" href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで相談する</a></div>
       <small>© 美腸活サロン Leaile</small>
     </div>
   </footer>
 </main>
 
-<div class="sp-cta"><a href="https://lin.ee/Y9IJFLw" target="_blank" rel="noopener">LINEで予約</a><a href="#menu">メニュー</a></div>
+<div class="sp-cta"><a href="https://lh-happysmile-5384-rvgwm1.t3-5ty6.workers.dev/r/leaile-hp" target="_blank" rel="noopener">LINEで予約</a><a href="#menu">メニュー</a></div>
 
 <script>
 (function(){
@@ -1082,7 +1113,7 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     ['.h2',''],['.lead',''],['.three li',''],['.road li',''],['.why li',''],['.atlas','pop'],['.scene-grid .sc','pop'],
     ['.msg-photos figure','pop'],['.koma','pop'],['.row','left'],['.first','pop'],['.tickets',''],['.bio','pop'],
     ['.learn',''],['.faq details',''],['.access-grid > *',''],['.tags > div',''],['.gut-top img','pop'],['.mind-grid .illus','pop'],
-    ['.stat',''],['.news','pop'],['.yoroshiki',''],['.manga-steps',''],['.gap-note','']
+    ['.stat',''],['.yoroshiki',''],['.manga-steps',''],['.gap-note','']
   ];
   var els=[];
   groups.forEach(function(g){
@@ -1102,6 +1133,5 @@ body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opa
     var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.remove('pre');});},2500);
 })();
 </script>
-
 </body>
 </html>
